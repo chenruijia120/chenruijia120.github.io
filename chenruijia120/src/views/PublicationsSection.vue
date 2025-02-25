@@ -28,6 +28,31 @@
             
             <el-card class="box-card" id="publications">
               <!-- <p class="project-title">VisiMark： Characterizing and Augmenting Landmarks for People with Low Vision in Augmented Reality to Support Indoor Navigation</p> -->
+              <el-col :span="16">
+              <p class="project-title">Understanding Mixed Reality Drift Tolerance</p>
+              
+              <p class="project-conference">Accepted to CHI EA'25
+                  <!-- <span style="color:grey ;">&ensp;<a href="https://arxiv.org/pdf/2502.10561" style="color:grey ;" target="_blank">[PDF]</a></span> -->
+                </p>
+                <p class="project-author">
+                  Daniel Killough*, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen*</span>, Yuhang Zhao, Bilge Mutlu
+                </p>
+                <p class="project-author">
+                  * Authors contributed equally to this research.</p>
+                <div style="margin-top:40px ;"></div>
+                <!-- <p class="project-content">
+                  
+                </p> -->
+              </el-col>
+              <el-col :span="8" class="pub-images">
+                <el-image :src="srcCHI25EA"></el-image>
+              </el-col>
+            </el-card>
+            <br/>
+
+            
+            <el-card class="box-card" id="publications">
+              <!-- <p class="project-title">VisiMark： Characterizing and Augmenting Landmarks for People with Low Vision in Augmented Reality to Support Indoor Navigation</p> -->
               <el-col :span="18">
               <p class="project-title">Modelling Effects of Visual Attention on Noticeability of Body-Avatar Offsets in Virtual Reality</p>
               
@@ -107,6 +132,7 @@
         srcIMWUT:require('@/assets/IMWUT2022.png'),
         srcCHI24:require('@/assets/CHI2024.jpg'),
         srcVisiMark:require('@/assets/VisiMark.jpg'),
+        srcCHI25EA:require('@/assets/MRDrift.jpg'),
       };
     }
   };

@@ -1,16 +1,16 @@
 <template>
     <div class="main" id="homeSection">
-      <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
-      <el-container>
+      <el-container >
         <el-main style="padding-top: 0%;">
           <el-tabs v-bind:value="activeNames.activeName" :key="activeNames" @tab-click="handleClick">
-            <el-tab-pane label="Home" name="home">
+            <el-tab-pane label="Home" name="home"  id="home">
               <br/>
               <div :class="['content-row', { 'desktop': windowWidth > 900 }]">
                 <!-- <el-col :span="5" v-if="windowWidth > 900" style="text-align: center;"> -->
-                <el-col :span="5" style="text-align: center;">
-                  <el-avatar :size=windowWidth/7 :src="avatarURL"/>
+                <el-col :span="5" style="text-align: center;padding-top: 2%;">
+                  <el-avatar :size=windowWidth/7 :src="avatarURL" shape="square"/>
                   <el-row id="icons">
                       <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
                       <a href="mailto:ruijia.chen@wisc.edu" style='color:black' class="icon">
@@ -108,7 +108,7 @@ export default {
         activeName: 'home',
         lastActiveName:'home',
       },
-      avatarURL: require('@/assets/photo.jpg'),
+      avatarURL: require('@/assets/photo2502.png'),
       windowWidth: document.documentElement.clientWidth,
 
     };
@@ -132,10 +132,18 @@ export default {
       //     section.scrollIntoView({ behavior: "smooth" });
       //   }
       // }
+      else  if(tab.name === 'home'){
+        this.restoreActiveTab();
+        const section = document.getElementById(tab.name);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
       else {
         this.restoreActiveTab();
         const section = document.getElementById(tab.name+"Section");
         if (section) {
+          section.style.scrollMarginTop = "80px";
           section.scrollIntoView({ behavior: "smooth" });
         }
       }
