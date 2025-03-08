@@ -10,7 +10,7 @@
               <div>
                 <el-row>
                 <el-col :span="isDesktop ? 5 : 24" style="text-align: center;padding-top: 0.6%;" class="avatar-col">
-                  <el-avatar :size=300 :src="avatarURL" shape="square"/>
+                  <el-avatar :size=280 :src="avatarURL" shape="square"/>
                   <el-row id="icons">
                       <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
                       <a href="mailto:ruijia.chen@wisc.edu" style='color:black' class="icon">
