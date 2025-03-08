@@ -7,10 +7,10 @@
           <el-tabs v-bind:value="activeNames.activeName" :key="activeNames" @tab-click="handleClick">
             <el-tab-pane label="Home" name="home"  id="home">
               <br/>
-              <div :class="['content-row', { 'desktop': windowWidth > 900 }]">
-                <!-- <el-col :span="5" v-if="windowWidth > 900" style="text-align: center;"> -->
-                <el-col :span="5" style="text-align: center;padding-top: 2%;">
-                  <el-avatar :size=windowWidth/7 :src="avatarURL" shape="square"/>
+              <div>
+                <el-row>
+                <el-col :span="isDesktop ? 5 : 24" style="text-align: center;padding-top: 0.6%;" class="avatar-col">
+                  <el-avatar :size=300 :src="avatarURL" shape="square"/>
                   <el-row id="icons">
                       <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
                       <a href="mailto:ruijia.chen@wisc.edu" style='color:black' class="icon">
@@ -31,7 +31,7 @@
                   </el-row>
                 </el-col>
   
-                <el-col :span="19" style="padding-left: 2%;">
+                <el-col :span="isDesktop ? 19 : 24" style="padding-left: 4%;" class="text-col">
                   <div class="myName">Ruijia Chen</div>
                   <div id="introduction">
                   <br/>
@@ -56,15 +56,8 @@
                   </p>
                 </div>
                 </el-col>
+              </el-row>
               </div>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
               <br/>
               <br/>
               <PublicationsSection id="pubSection"/>
@@ -108,7 +101,7 @@ export default {
         activeName: 'home',
         lastActiveName:'home',
       },
-      avatarURL: require('@/assets/photo2502.png'),
+      avatarURL: require('@/assets/photo2503.png'),
       windowWidth: document.documentElement.clientWidth,
 
     };
@@ -171,6 +164,11 @@ export default {
         console.log("实时屏幕宽度：",val, that.windowHeight );
       }
     },
+  computed: {
+    isDesktop() {
+      return this.windowWidth > 1500;
+    }
+  },
 };
 </script>
 
@@ -305,7 +303,7 @@ export default {
     font-size: x-large;
   }
 
-  @media only screen and (max-width: 900px){
+  @media (max-width: 900px){
     #projects{
       padding-left: 5px;
       padding-right: 10px;
@@ -328,12 +326,6 @@ export default {
     }
     .icon{
       font-size: medium;
-    }
-
-    .section{
-      margin-left: 10px;
-      color: dimgrey; 
-      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     }
   }
 
