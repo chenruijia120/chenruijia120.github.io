@@ -51,9 +51,9 @@
                     I design and develop AR technology to automatically recognize surrounding visual information that cannot be easily perceived by people with low vision, 
                     and generate suitable multi-modal feedback to enhance their perceptual abilities in various daily tasks.
                   </p>
-                  <p class="paragraph">
+                  <!-- <p class="paragraph">
                     <span style='color:var(--primary-color);font-weight: bolder;'>Looking for research internship for Summer 2025!</span>
-                  </p>
+                  </p> -->
                 </div>
                 </el-col>
               </el-row>
@@ -72,7 +72,7 @@
             </el-tab-pane>
   
             <el-tab-pane label="Publications" name="pub"></el-tab-pane>
-            <el-tab-pane label="Research Experiences" name="experiences"></el-tab-pane>
+            <el-tab-pane label="Experiences" name="experiences"></el-tab-pane>
             <el-tab-pane label="Services" name="services"></el-tab-pane>
             <el-tab-pane label="Resume" name="resume"></el-tab-pane>
           </el-tabs>
@@ -101,7 +101,7 @@ export default {
         activeName: 'home',
         lastActiveName:'home',
       },
-      avatarURL: require('@/assets/photo2503.png'),
+      avatarURL: require('@/assets/photo2503.jpg'),
       windowWidth: document.documentElement.clientWidth,
 
     };
@@ -157,11 +157,11 @@ export default {
     watch: {
       windowHeight (val) {
         let that = this;
-        console.log("实时屏幕高度：",val, that.windowHeight );
+        console.log("screen height:",val, that.windowHeight );
       },
       windowWidth (val) {
         let that = this;
-        console.log("实时屏幕宽度：",val, that.windowHeight );
+        console.log("screen width:",val, that.windowHeight );
       }
     },
   computed: {
@@ -177,6 +177,7 @@ export default {
     --primary-color: #660066;
     --text-color: darkslategrey;
     --secondary-text-color: darkgray;
+    --dark-grey:rgb(85, 85, 85);
     --link-color: #9966CC;
     --conference-color:#910191;
   }
@@ -232,17 +233,18 @@ export default {
   .project-title{
     font-size: large;
     font-weight:500;
-    margin-bottom: 0px;
+    margin-bottom: 4%;
   }
 
   .project-conference{
     font-size: medium;
     color: var(--conference-color);
-    font-weight: bold;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 0%;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   }
 
-  .project-content{
+  .research-content{
     font-size: medium;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     
@@ -257,19 +259,27 @@ export default {
   
   .research{
     font-size: large;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:500;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    margin-bottom: 2%;
   }
 
   .research-time{
     font-size: medium;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--secondary-text-color);
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: var(--conference-color);
   }
 
   .pub-images{
     display: flex;
     justify-content: flex-end;
     padding-left: 1%;
+  }
+  .pub-images-small{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 5%;
+    padding-right:5%;
   }
 
   #projects{

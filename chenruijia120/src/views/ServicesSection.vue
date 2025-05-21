@@ -8,7 +8,7 @@
             Teaching Assistant for CS571 (Building User Interfaces) | University of Wisconsin-Madison
             </p>
             <p class="research-time">
-            August 2024 -- present, August 2023 -- December 2023
+            August 2024 -- May 2025, August 2023 -- December 2023
             </p>
             <el-divider></el-divider>
             <p class="research">
