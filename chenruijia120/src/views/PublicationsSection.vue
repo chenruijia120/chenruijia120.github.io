@@ -19,7 +19,7 @@
                   <!-- &nbsp; -->
                   <span style="color:grey ;">&ensp;<a href="https://drive.google.com/file/d/1Nyx-t0yRIImjBIoKNLLwttbZ5fFA2Myd/view?usp=sharing" style="color:grey ;" target="_blank">[Demo]</a></span> 
                   <!-- &nbsp; -->
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style="color:grey ;" target="_blank">[Link]</a></span>
+                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Junru Jiang, Pragati Maheshwary, Brianna R Cochran, Yuhang Zhao
@@ -42,7 +42,7 @@
                 <p class="project-conference">Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '25)
                   &nbsp;
                   <span style="color:grey ;"><a href="https://www.youtube.com/watch?v=Mn6fU_YFgyE" style="color:grey ;" target="_blank">[Video]</a></span> 
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3706599.3720161" style="color:grey ;" target="_blank">[Link]</a></span>
+                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3706599.3720161" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>*, Daniel Killough*, Yuhang Zhao, Bilge Mutlu
@@ -66,7 +66,7 @@
                 <p class="project-conference">Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)
                   &nbsp;
                   <span style="color:grey ;"><a href="https://www.youtube.com/watch?v=ZfLArnKg7gE" style="color:grey ;" target="_blank">[Video]</a></span> 
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713392" style="color:grey ;" target="_blank">[Link]</a></span>
+                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713392" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   Zhipeng Li, Yishu Ji, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Tianqi Liu, Yuntao Wang, Yuanchun Shi, Yukang Yan
@@ -89,7 +89,7 @@
                 <p class="project-conference">Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24)
                   &nbsp;
                   <span style="color:grey ;"><a href="https://www.youtube.com/watch?v=ousbRtyklQI" style="color:grey ;" target="_blank">[Video]</a></span> 
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3613904.3642195" style="color:grey ;" target="_blank">[Link]</a></span>
+                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3613904.3642195" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   Kexin Zhang, Brianna R Cochran, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Lance Hartung, Bryce Sprecher, Ross Tredinnick, Kevin Ponto, Suman Banerjee, Yuhang Zhao
@@ -112,7 +112,7 @@
                 <p class="project-conference">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT '22)
                   &nbsp;
                   <span style="color:grey ;"><a href="https://drive.google.com/file/d/15q4QfytW2d1L4mXLL7pibFZL5xWQFNT-/view?usp=sharing" style="color:grey ;" target="_blank">[Video]</a></span> 
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3534590" style="color:grey ;" target="_blank">[Link]</a></span>
+                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3534590" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   Zhipeng Li, Yu Jiang, Yihao Zhu, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Ruolin Wang, Yuntao Wang, Yukang Yan, Yuanchun Shi
