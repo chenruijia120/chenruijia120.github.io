@@ -39,7 +39,7 @@
                     Welcome! My name is Ruijia Chen, pronounced as ray-jar (in Chinese: 陈睿嘉).
                   </p>
                   <p class="paragraph">
-                    I am currently a second-year Ph.D. student in Computer Science at the University of Wisconsin-Madison, advised by <a href="https://www.yuhangz.com/" style='color:var(--link-color)' target="_blank">Prof. Yuhang Zhao</a>. 
+                    I am currently a third-year Ph.D. student in Computer Science at the University of Wisconsin-Madison, advised by <a href="https://www.yuhangz.com/" style='color:var(--link-color)' target="_blank">Prof. Yuhang Zhao</a>. 
                     Previously, I completed my B.E. in Computer Science at Tsinghua University, advised by <a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/" style='color:var(--link-color)' target="_blank">Prof. Yuntao Wang</a>.
                     <!-- <a href="https://pi.cs.tsinghua.edu.cn/" style='color:#9966CC' target="_blank">Pervasive Interaction Lab, Department of Computer Science, Tsinghua University</a>. -->
                   </p>
