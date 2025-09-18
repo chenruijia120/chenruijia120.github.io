@@ -6,6 +6,31 @@
             <el-card class="box-card" id="publications">
               <el-row>
               <el-col :span="8" class="pub-images">
+                <el-image :src="srcVisiMark" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+              </el-col>
+              <el-col :span="15" style="margin-left: 2%;">
+                <p class="project-title">
+                  VisiMark: Characterizing and Augmenting Landmarks for People with Low Vision in Augmented Reality to Support Indoor Navigation
+                </p>
+                <p class="project-conference">Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)
+                  &nbsp;
+                  <span style="color:grey ;"><a href="https://www.youtube.com/watch?v=LqkjHBSFaM0" style="color:grey ;" target="_blank">[Presentation]</a></span> 
+                  <!-- &nbsp; -->
+                  <span style="color:grey ;">&ensp;<a href="https://drive.google.com/file/d/1Nyx-t0yRIImjBIoKNLLwttbZ5fFA2Myd/view?usp=sharing" style="color:grey ;" target="_blank">[Demo]</a></span> 
+                  <!-- &nbsp; -->
+                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style="color:grey ;" target="_blank">[Paper]</a></span>
+                </p>
+                <p class="project-author">
+                  <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>1</sup></span>, Junru Jiang, Pragati Maheshwary, Brianna R Cochran, Yuhang Zhao
+                </p>
+                <div style="margin-top:2% ;"></div>
+              </el-col>
+              </el-row>
+
+            <el-divider></el-divider>
+            
+              <el-row>
+              <el-col :span="8" class="pub-images">
                 <el-image :src="srcASSETS25Ru" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
               <el-col :span="15" style="margin-left: 2%;">
@@ -17,7 +42,7 @@
                   <span style="color:grey ;">&ensp;<a href="https://arxiv.org/abs/2501.14327" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
-                  Ru Wang, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Anqiao Erica Cai, Zhiyuan Li, Sanbrita Mondal, Yuhang Zhao
+                  Ru Wang, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>2</sup></span>, Anqiao Erica Cai, Zhiyuan Li, Sanbrita Mondal, Yuhang Zhao
                 </p>
                 <div style="margin-top:2% ;"></div>
               </el-col>
@@ -39,7 +64,7 @@
                   <span style="color:grey ;">&ensp;<a href="https://arxiv.org/abs/2507.13309" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
-                  Hanxiu 'Hazel' Zhu, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Yuhang Zhao
+                  Hanxiu 'Hazel' Zhu, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>2</sup></span>, Yuhang Zhao
                 </p>
                 <div style="margin-top:2% ;"></div>
               </el-col>
@@ -47,30 +72,6 @@
 
             <el-divider></el-divider>
 
-              <el-row>
-              <el-col :span="8" class="pub-images">
-                <el-image :src="srcVisiMark" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
-              </el-col>
-              <el-col :span="15" style="margin-left: 2%;">
-                <p class="project-title">
-                  VisiMark: Characterizing and Augmenting Landmarks for People with Low Vision in Augmented Reality to Support Indoor Navigation
-                </p>
-                <p class="project-conference">Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)
-                  &nbsp;
-                  <span style="color:grey ;"><a href="https://www.youtube.com/watch?v=LqkjHBSFaM0" style="color:grey ;" target="_blank">[Presentation]</a></span> 
-                  <!-- &nbsp; -->
-                  <span style="color:grey ;">&ensp;<a href="https://drive.google.com/file/d/1Nyx-t0yRIImjBIoKNLLwttbZ5fFA2Myd/view?usp=sharing" style="color:grey ;" target="_blank">[Demo]</a></span> 
-                  <!-- &nbsp; -->
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style="color:grey ;" target="_blank">[Paper]</a></span>
-                </p>
-                <p class="project-author">
-                  <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Junru Jiang, Pragati Maheshwary, Brianna R Cochran, Yuhang Zhao
-                </p>
-                <div style="margin-top:2% ;"></div>
-              </el-col>
-              </el-row>
-
-            <el-divider></el-divider>
 
 
               <el-row>
@@ -87,7 +88,7 @@
                   <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3706599.3720161" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
-                  Daniel Killough*, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>*, Yuhang Zhao, Bilge Mutlu
+                  Daniel Killough*, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>1</sup></span>*, Yuhang Zhao, Bilge Mutlu
                 </p>
                 <p class="project-author">
                   * Authors contributed equally to this research.</p>
@@ -111,7 +112,7 @@
                   <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713392" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
-                  Zhipeng Li, Yishu Ji, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Tianqi Liu, Yuntao Wang, Yuanchun Shi, Yukang Yan
+                  Zhipeng Li, Yishu Ji, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>3</sup></span>, Tianqi Liu, Yuntao Wang, Yuanchun Shi, Yukang Yan
                 </p>
                 <div style="margin-top:2% ;"></div>
               </el-col>
@@ -134,7 +135,7 @@
                   <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3613904.3642195" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
-                  Kexin Zhang, Brianna R Cochran, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Lance Hartung, Bryce Sprecher, Ross Tredinnick, Kevin Ponto, Suman Banerjee, Yuhang Zhao
+                  Kexin Zhang, Brianna R Cochran, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>3</sup></span>, Lance Hartung, Bryce Sprecher, Ross Tredinnick, Kevin Ponto, Suman Banerjee, Yuhang Zhao
                 </p>
                 <div style="margin-top:2% ;"></div>
               </el-col>
@@ -157,7 +158,7 @@
                   <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3534590" style="color:grey ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
-                  Zhipeng Li, Yu Jiang, Yihao Zhu, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Ruolin Wang, Yuntao Wang, Yukang Yan, Yuanchun Shi
+                  Zhipeng Li, Yu Jiang, Yihao Zhu, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>4</sup></span>, Ruolin Wang, Yuntao Wang, Yukang Yan, Yuanchun Shi
                 </p>
                 <div style="margin-top:2% ;"></div>
               </el-col>

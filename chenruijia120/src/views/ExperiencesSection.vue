@@ -12,14 +12,14 @@
             </p>
             <el-divider></el-divider> -->
             <p class="research">
-            Research & Development Intern | Niantic, Inc.
+            Research & Development Intern | Niantic Spatial, Inc.
             </p>
             <p class="research-time">
             Advised by Dr. Jessica Van Brummelen and Prof. Gabriel Brostow, May 2025 -- September 2025
             </p>
-            <!-- <p class="research-content">
-              Working on designing AR applications for blind and low vision users.
-            </p> -->
+            <p class="research-content">
+              Worked on designing AI agent-based AR phone applications for blind and low vision users. Co-first author paper under submission.
+            </p>
 
             <el-divider></el-divider>
 

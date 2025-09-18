@@ -12,7 +12,8 @@
             </p>
             <el-divider></el-divider>
             <p class="research">
-            Reviewer: IMWUT'24, ISMAR'24, SIGGRAPH'24 poster, CHI'24 LBW
+              Reviewer: ICCV'25, CSCW'25, IMWUT'24, ISMAR'24, SIGGRAPH'24, CHI'24
+            <!-- Reviewer: IMWUT'24, ISMAR'24, SIGGRAPH'24 poster, CHI'24 LBW -->
             </p>
         </el-card>
     </div>
