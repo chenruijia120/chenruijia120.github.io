@@ -475,6 +475,14 @@ export default {
       margin-left: 5px;
       margin-right: 10px;
     }
+    #internship{
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+    #news{
+      margin-left: 5px;
+      margin-right: 10px;
+    }
     #icons{
       /* margin-left: 0px; */
       padding-left: 10%;
