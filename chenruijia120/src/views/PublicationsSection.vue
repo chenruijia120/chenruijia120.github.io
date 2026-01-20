@@ -3,13 +3,13 @@
             <h5 class="section">
               Publications
             </h5>
-            <el-button-group style="margin-left: 50px; ">
+            <el-button-group style="margin-left: 3%; ">
             <el-button class="pub-button" size="medium" :type="pubFilter==='selected' ? 'primary' : 'default'" @click="pubFilter='selected'">Selected publications</el-button>
             <el-button class="pub-button" size="medium" :type="pubFilter==='all' ? 'primary' : 'default'" @click="pubFilter='all'">All publications</el-button>
             <el-button class="pub-button" size="medium" :type="pubFilter==='full' ? 'primary' : 'default'" @click="pubFilter='full'">Full papers</el-button>
             <el-button class="pub-button" size="medium" :type="pubFilter==='posters' ? 'primary' : 'default'" @click="pubFilter='posters'">Posters</el-button>
             </el-button-group>
-            <el-button-group style="margin-left: 50px; ">
+            <el-button-group style="margin-left: 3%; ">
             <el-button class="pub-button" size="medium" :type="pubFilter==='mr' ? 'primary' : 'default'" @click="pubFilter='mr'">Mixed Reality</el-button>
             <el-button class="pub-button" size="medium" :type="pubFilter==='a11y' ? 'primary' : 'default'" @click="pubFilter='a11y'">Accessibility</el-button>
             <el-button class="pub-button" size="medium" :type="pubFilter==='perception' ? 'primary' : 'default'" @click="pubFilter='perception'">User Perception</el-button>
@@ -17,7 +17,7 @@
             </el-button-group>
 
 
-            <p style="margin-left: 50px;font-size: large;font-family:'Times New Roman', Times, serif;">
+            <p style="margin-left: 3%;font-size: large;font-family:'Times New Roman', Times, serif;">
               * Authors contributed equally to this research.</p>
             <br/>
             <el-card class="box-card" id="publications">

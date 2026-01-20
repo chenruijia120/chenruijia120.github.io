@@ -10,7 +10,7 @@
               <div>
                 <el-row>
                 <el-col :span="isDesktop ? 5 : 24" style="text-align: center;padding-top: 0.6%;" class="avatar-col">
-                  <el-avatar :size=280 :src="avatarURL" shape="square"/>
+                  <el-avatar :size="avatarSize" :src="avatarURL" shape="square"/>
                   <el-row id="icons">
                       <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
                       <a href="mailto:ruijia.chen@wisc.edu" style='color:black' class="icon">
@@ -65,7 +65,7 @@
               </h5>
               <el-card :span="18" class="box-card no-padding" id="news">
               <el-scrollbar class="scroll-box-el" style="padding-top: 0%;margin-top: 0%;" :always="true">
-              <ul class="news-list" style="padding-top: 0%;margin-top: 0%;">
+              <ul class="news-list" style="padding-top: 0%;margin-top: 0%;margin-left: 0%;padding-left: 0%;">
                 <li class="news-item">
                   <span class="news-date">Jan 15th, 2026</span>
                   <span class="news-text">
@@ -163,6 +163,7 @@ export default {
       },
       avatarURL: require('@/assets/photo2503.jpg'),
       windowWidth: document.documentElement.clientWidth,
+      windowHeight: document.documentElement.clientHeight,
     };
   },
   methods: {
@@ -224,8 +225,13 @@ export default {
     },
   computed: {
     isDesktop() {
-      return this.windowWidth > 1500;
-    }
+      return this.windowWidth >=992
+    },
+    avatarSize() {
+    if (this.windowWidth <= 420) return 180;
+    if (this.windowWidth <= 900) return 220;
+    return 280;
+  }
   },
 };
 </script>
@@ -279,7 +285,7 @@ export default {
   }
 
   #introduction{
-    padding-right: 60px;
+    padding-right: 2%;
     font-size: medium;
   }
 
@@ -352,10 +358,6 @@ export default {
     justify-content: flex-end;
     padding-left: 5%;
     padding-right:5%;
-  }
-
-  .no-padding :deep(.el-card__body) {
-    padding: 0 !important;
   }
 
   
@@ -453,35 +455,51 @@ export default {
     border-radius: 4px;
   }
 
-  .pub-button :deep(span) {
-    font-size: 16px;
-  }
+  .no-padding .el-card__body { padding: 0 !important; }
+  .pub-button span { font-size: 16px; }
+
 
 
   @media (max-width: 900px){
+    
+    .section{
+      margin-left: 3%;
+      color: rgb(79, 78, 78); 
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    }
+    .el-tabs {
+      font-size: 26px;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .myName { font-size: 28px; }
+      #introduction{
+      padding-right: 5px;
+      font-size: medium;
+    }
     #projects{
       padding-left: 5px;
-      padding-right: 10px;
+      padding-right: 5px;
     }
     #experience{
       margin-left: 5px;
-      margin-right: 10px;
+      margin-right: 5px;
     }
     #publications{
       margin-left: 5px;
-      margin-right: 10px;
+      margin-right: 5px;
     }
     #services{
       margin-left: 5px;
-      margin-right: 10px;
+      margin-right: 5px;
     }
     #internship{
       margin-left: 5px;
-      margin-right: 10px;
+      margin-right: 5px;
     }
     #news{
       margin-left: 5px;
-      margin-right: 10px;
+      margin-right: 5px;
     }
     #icons{
       /* margin-left: 0px; */
@@ -490,6 +508,8 @@ export default {
     .icon{
       font-size: medium;
     }
+    .news-item { font-size: medium; }
+    .news-date { width: 105px; }
   }
 
 </style>
