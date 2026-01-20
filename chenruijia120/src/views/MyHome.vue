@@ -3,8 +3,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
       <el-container style="padding: 1%;">
-        <el-main style="padding-top: 0%;">
-           <div class="top-nav">
+        <el-main  ref="scrollHost" style="padding-top: 0%;">
+          <div class="top-nav" :class="{ 'nav-hidden': hideNav }">
             <el-menu
               :default-active="activeSection"
               mode="horizontal"
@@ -154,7 +154,7 @@
   
         <el-backtop :right="100" :bottom="100" />
       </el-container>
-    </div>
+      </div>
   </template>
 
 <script>
@@ -173,6 +173,8 @@ export default {
   },
   data() {
     return {
+      hideNav: false,
+      lastScrollY: 0,
       activeSection: 'home',
       avatarURL: require('@/assets/photo2503.jpg'),
       windowWidth: document.documentElement.clientWidth,
@@ -203,9 +205,29 @@ export default {
       this.windowWidth = document.documentElement.clientWidth;
     };
     window.addEventListener("resize", this._onResize, { passive: true });
+    this.$nextTick(() => {
+      const host = this.$refs.scrollHost?.$el || this.$refs.scrollHost;
+      if (!host) return;
+
+      this._onScroll = () => {
+        if (this.windowWidth > 1050) {
+          this.hideNav = false;
+          return;
+        }
+        const y = host.scrollTop;
+        this.hideNav = y > 10;
+      };
+
+      host.addEventListener("scroll", this._onScroll, { passive: true });
+      this._scrollHost = host;
+    });
   },
   beforeDestroy() {
     window.removeEventListener("resize", this._onResize);
+    if (this._scrollHost && this._onScroll) {
+      this._scrollHost.removeEventListener("scroll", this._onScroll);
+    }
+
   },
   computed: {
     isDesktop() {
@@ -463,6 +485,13 @@ export default {
     z-index: 999;
     background: #fff;
     padding-top: 8px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  .nav-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
   }
 
   .nav-menu {
