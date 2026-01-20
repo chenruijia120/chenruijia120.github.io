@@ -65,7 +65,7 @@
               </h5>
               <el-card :span="18" class="box-card no-padding" id="news">
               <el-scrollbar class="scroll-box-el" style="padding-top: 0%;margin-top: 0%;" :always="true">
-              <ul class="news-list" style="padding-top: 0%;margin-top: 0%;margin-left: 0%;padding-left: 0%;">
+              <ul class="news-list" style="padding-top: 1%;margin: 0%;padding-left: 2%;padding-bottom: 1%;">
                 <li class="news-item">
                   <span class="news-date">Jan 15th, 2026</span>
                   <span class="news-text">
@@ -213,16 +213,16 @@ export default {
           })()
         };
     },
-    watch: {
-      windowHeight (val) {
-        let that = this;
-        console.log("screen height:",val, that.windowHeight );
-      },
-      windowWidth (val) {
-        let that = this;
-        console.log("screen width:",val, that.windowHeight );
-      }
-    },
+    // watch: {
+    //   windowHeight (val) {
+    //     let that = this;
+    //     console.log("screen height:",val, that.windowHeight );
+    //   },
+    //   windowWidth (val) {
+    //     let that = this;
+    //     console.log("screen width:",val, that.windowHeight );
+    //   }
+    // },
   computed: {
     isDesktop() {
       return this.windowWidth >=992
@@ -510,6 +510,9 @@ export default {
     }
     .news-item { font-size: medium; }
     .news-date { width: 105px; }
+    .pub-images{
+      width: 0px;
+    }
   }
 
 </style>

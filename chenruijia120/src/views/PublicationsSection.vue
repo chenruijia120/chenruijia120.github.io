@@ -25,10 +25,10 @@
               
             <!-- <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
               <el-row>
-              <el-col :span="8" class="pub-images">
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
                 <el-image :src="srcNaviNote" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
-              <el-col :span="15" style="margin-left: 2%;">
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
                   NaviNote: Enabling In-situ Spatial Annotation Authoring to Support Exploration and Navigation for Blind and Low Vision People
                 </p>
@@ -47,10 +47,10 @@
             
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'gaze'">
               <el-row>
-              <el-col :span="8" class="pub-images">
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
                 <el-image :src="srcASSETS25Ru" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
-              <el-col :span="15" style="margin-left: 2%;">
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
                   Characterizing Visual Intents for People with Low Vision through Eye Tracking
                 </p>
@@ -70,10 +70,10 @@
 
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'a11y'">
               <el-row>
-              <el-col :span="8" class="pub-images">
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
                 <el-image :src="srcASSETS25Hazel" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
-              <el-col :span="15" style="margin-left: 2%;">
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
                   FocusView: Understanding and Customizing Informational Video Watching Experiences for Viewers with ADHD
                 </p>
@@ -92,10 +92,10 @@
 
             <div v-show="pubFilter === 'all' ||pubFilter === 'posters' || pubFilter === 'perception' || pubFilter === 'mr'">
               <el-row>
-              <el-col :span="8" class="pub-images">
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
                 <el-image :src="srcCHI25EA" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
-              <el-col :span="15" style="margin-left: 2%;">
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
                   Understanding Mixed Reality Drift Tolerance
                 </p>
@@ -117,10 +117,10 @@
 
             <div v-show="pubFilter === 'selected' || pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
               <el-row>
-              <el-col :span="8" class="pub-images">
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
                 <el-image :src="srcVisiMark" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
-              <el-col :span="15" style="margin-left: 2%;">
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
                   VisiMark: Characterizing and Augmenting Landmarks for People with Low Vision in Augmented Reality to Support Indoor Navigation
                 </p>
@@ -146,10 +146,10 @@
 
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'perception' || pubFilter === 'mr' || pubFilter === 'gaze'">
               <el-row>
-              <el-col :span="8" class="pub-images-small">
+              <el-col v-if="isDesktop" :span="8" class="pub-images-small">
                 <el-image :src="srcCHI25THU" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
-              <el-col :span="15" style="margin-left: 2%;">
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
                   Modeling the Impact of Visual Stimuli on Redirection Noticeability with Gaze Behavior in Virtual Reality
                 </p>
@@ -172,10 +172,10 @@
 
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'mr'">
               <el-row>
-              <el-col :span="8" class="pub-images">
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
                 <el-image :src="srcCHI24" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
-              <el-col :span="15" style="margin-left: 2%;">
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
                   Exploring the Design Space of Optical See-through AR Head-Mounted Displays to Support First Responders in the Field
                 </p>
@@ -196,10 +196,10 @@
 
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'perception' || pubFilter === 'mr'">
               <el-row>
-              <el-col :span="8" class="pub-images-small">
+              <el-col v-if="isDesktop" :span="8" class="pub-images-small">
                 <el-image :src="srcIMWUT22" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
-              <el-col :span="15" style="margin-left: 2%;">
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
                   Modeling the Noticeability of User-Avatar Movement Inconsistency for Sense of Body Ownership Intervention
                 </p>
@@ -232,8 +232,36 @@
         srcCHI25THU:require('@/assets/srcCHI25THU.jpg'),
         srcASSETS25Ru:require('@/assets/ASSETS25Ru.png'),
         srcASSETS25Hazel:require('@/assets/ASSETS26Hazel.jpg'),
+        windowWidth: document.documentElement.clientWidth,
+        windowHeight: document.documentElement.clientHeight,
       };
-    }
+    },
+    mounted(){
+      var that = this;
+        window.onresize = () => {
+          return (() => {
+            window.fullHeight = document.documentElement.clientHeight;
+              window.fullWidth = document.documentElement.clientWidth;
+            that.windowHeight = window.fullHeight;  // height
+            that.windowWidth = window.fullWidth; // width
+          })()
+        };
+    },
+    // watch: {
+    //   windowHeight (val) {
+    //     let that = this;
+    //     console.log("screen height:",val, that.windowHeight );
+    //   },
+    //   windowWidth (val) {
+    //     let that = this;
+    //     console.log("screen width:",val, that.windowHeight );
+    //   }
+    // },
+    computed: {
+      isDesktop() {
+        return this.windowWidth >= 992;
+      }
+  }
   };
   </script>
   
