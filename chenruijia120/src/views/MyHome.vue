@@ -59,8 +59,65 @@
               </el-row>
               </div>
               <br/>
+              <div>
+              <h5 id="services-title" class="section">
+                  News
+              </h5>
+              <el-card :span="18" class="box-card no-padding" id="news">
+              <el-scrollbar class="scroll-box-el" style="padding-top: 0%;margin-top: 0%;" :always="true">
+              <ul class="news-list" style="padding-top: 0%;margin-top: 0%;">
+                <li class="news-item">
+                  <span class="news-date">Jan 15th, 2026</span>
+                  <span class="news-text">
+                    NaviNote, my internship project at Niantic Spatial, has been conditionally accepted to CHI'26!
+                  </span>
+                </li>
+                <li class="news-item">
+                  <span class="news-date">Jun 18th, 2025</span>
+                  <span class="news-text">
+                    Two papers accepted to ASSETS 2025. Congratulations to my co-authors!
+                  </span>
+                </li>
+                <li class="news-item">
+                  <span class="news-date">May 13th, 2025</span>
+                  <span class="news-text">
+                    Started my internship at Niantic Spatial in London, UK!
+                  </span>
+                </li>
+                <li class="news-item">
+                  <span class="news-date">May 1st, 2025</span>
+                  <span class="news-text">
+                    Presented <a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style='color:var(--link-color)' target="_blank">VisiMark</a> at CHI'25 in Yokohama, Japan!
+                  </span>
+                </li>
+                <li class="news-item">
+                  <span class="news-date">Apr 26th, 2025</span>
+                  <span class="news-text">
+                    Excited to be a student volunteer at CHI'25!
+                  </span>
+                </li>
+                <li class="news-item">
+                  <span class="news-date">Feb 22th, 2025</span>
+                  <span class="news-text">
+                    One poster accepted to CHI'25!
+                  </span>
+                </li>
+                <li class="news-item">
+                  <span class="news-date">Jan 16th, 2025</span>
+                  <span class="news-text">
+                    Two full papers accepted to CHI'25!
+                  </span>
+                </li>
+              </ul>
+              </el-scrollbar>
+              </el-card>
+              </div>
+              <br/>
               <br/>
               <PublicationsSection id="pubSection"/>
+              <br/>
+              <br/>
+              <InternshipSection id="internshipSection"/>
               <br/>
               <br/>
               <ExperiencesSection id="experiencesSection"/>
@@ -72,8 +129,9 @@
             </el-tab-pane>
   
             <el-tab-pane label="Publications" name="pub"></el-tab-pane>
-            <el-tab-pane label="Experiences" name="experiences"></el-tab-pane>
-            <el-tab-pane label="Services" name="services"></el-tab-pane>
+            <el-tab-pane label="Internships" name="internship"></el-tab-pane>
+            <el-tab-pane label="Research Experiences" name="experiences"></el-tab-pane>
+            <el-tab-pane label="Services and Teaching" name="services"></el-tab-pane>
             <el-tab-pane label="Resume" name="resume"></el-tab-pane>
           </el-tabs>
         </el-main>
@@ -87,13 +145,15 @@
 import ExperiencesSection from './ExperiencesSection.vue'
 import PublicationsSection from './PublicationsSection.vue'
 import ServicesSection from './ServicesSection.vue'
+import InternshipSection from './InternshipSection.vue'
 
 export default {
   name: "MyHome",
   components: {
     ExperiencesSection,
     PublicationsSection,
-    ServicesSection
+    ServicesSection,
+    InternshipSection
   },
   data() {
     return {
@@ -103,7 +163,6 @@ export default {
       },
       avatarURL: require('@/assets/photo2503.jpg'),
       windowWidth: document.documentElement.clientWidth,
-
     };
   },
   methods: {
@@ -144,13 +203,12 @@ export default {
   },
     mounted(){
       var that = this;
-        // <!--把window.onresize事件挂在到mounted函数上-->
         window.onresize = () => {
           return (() => {
             window.fullHeight = document.documentElement.clientHeight;
               window.fullWidth = document.documentElement.clientWidth;
-            that.windowHeight = window.fullHeight;  // 高
-            that.windowWidth = window.fullWidth; // 宽
+            that.windowHeight = window.fullHeight;  // height
+            that.windowWidth = window.fullWidth; // width
           })()
         };
     },
@@ -233,7 +291,7 @@ export default {
   .project-title{
     font-size: large;
     font-weight:500;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
   }
 
   .project-conference{
@@ -264,6 +322,20 @@ export default {
     margin-bottom: 2%;
   }
 
+  
+  .service_para{
+    font-size: large;
+    font-weight:500;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    /* margin-bottom: 2%; */
+  }
+
+  .news-item{
+    font-size: medium;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+
   .research-time{
     font-size: medium;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
@@ -282,12 +354,23 @@ export default {
     padding-right:5%;
   }
 
+  .no-padding :deep(.el-card__body) {
+    padding: 0 !important;
+  }
+
+  
+
   #projects{
     padding-left: 50px;
     padding-right: 100px;
   }
 
   #experience{
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+
+  #internship{
     margin-left: 50px;
     margin-right: 100px;
   }
@@ -309,9 +392,71 @@ export default {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   }
 
+  .scroll-box-el {
+    height: 150px;
+    /* border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 14px;
+    background: #fff; */
+  }
+
+  
+  .scroll-box-el .el-scrollbar__bar {
+    opacity: 1 !important;
+  }
+
+  .scroll-box-el .el-scrollbar__bar.is-vertical,
+  .scroll-box-el .el-scrollbar__bar.is-horizontal {
+    display: block !important;
+  }
+
+  #news{
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+
+  .news-item {
+    display: flex;
+    align-items: flex-start;
+    /* margin: 6px 0; */
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+  }
+
+  .news-date {
+    color: var(--conference-color);
+    font-weight: bold;
+    width: 135px;
+    flex-shrink: 0;
+  }
+
+  .news-text {
+    flex: 1;
+  }
   .icon{
     font-size: x-large;
   }
+
+  .image-placeholder {
+    width: 100%;
+    height: 180px;     
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: x-large;
+    color: #343434;
+    font-style: italic;
+
+    border: 1px dashed #ddd;
+    border-radius: 4px;
+  }
+
+  .pub-button :deep(span) {
+    font-size: 16px;
+  }
+
 
   @media (max-width: 900px){
     #projects{
