@@ -25,7 +25,7 @@
               
             <!-- <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
               <el-row>
-              <el-col v-if="isDesktop" :span="8" class="pub-images">
+              <el-col v-if="isDesktop" :span="8" class="pub-images" alt="NaviNote teaser figure: A five-stage pipeline is shown with 5 panels. Each panel shows a user with a vest and speech bubbles communicating between NaviNote and the user. In (1), the user asks, ``Where am I?'' The system responds: ``You're at the park entrance. There's a statue nearby...'' The user follows up: ``Please, guide me to the statue!''; In (2) NaviNote provides navigation instructions, ``Walk straight for 15 meters...'', ``... podium ahead at 10 o'clock''; In (3) the user listens to a nearby spatial annotation, ``Be careful, there are 16 steps ahead''; In (4) the user asks: ``What did others say about the statue?'' The system responds: ``One annotation notes the statue is of Cicero, a famed orator, lawyer and politician.''; In (5) the user creates their own spatial annotation, ``There's a nice café with accessible restrooms here.''. During the interaction, the user wears a vest that holds the smartphone with camera facing forward, and localizes their precise positions using Visual Positioning System (VPS) in a pre-scanned area on the smartphone.">
                 <el-image :src="srcNaviNote" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
@@ -48,7 +48,7 @@
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'gaze'">
               <el-row>
               <el-col v-if="isDesktop" :span="8" class="pub-images">
-                <el-image :src="srcASSETS25Ru" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+                <el-image :src="srcASSETS25Ru" style="padding-top: 3%;padding-bottom: 5%;" alt="This figure shows a five-panel visual illustration showcasing five types of visual intent during image-viewing: Searching, Observing, Traversing, Comparing, and Exploring. Each panel contains an an illustration of the same example image (four people having a picnic on the foreground of the image) with mock gaze trajectories overlaid as colored lines and dots representing saccades and fixations. The 'Searching' panel shows sparse gaze scanpaths moving towards the person on the left. 'Observing' shows fixations clustered on the person on the left. 'Traversing' displays scanpaths across multiple people one by one from left to right. 'Comparing' includes back-and-forth gaze movements between the two people on the right. 'Exploring' shows broader, scattered gaze paths covering the entire image. The gaze paths are illustrative and not drawn from real data."></el-image>
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
@@ -56,7 +56,7 @@
                 </p>
                 <p class="project-conference">Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '25)
                   &nbsp;
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3663547.3746391" style="color:grey ;" target="_blank">[Paper]</a></span>
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3663547.3746391" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   Ru Wang, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>2</sup></span>, Anqiao Erica Cai, Zhiyuan Li, Sanbrita Mondal, Yuhang Zhao
@@ -71,7 +71,7 @@
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'a11y'">
               <el-row>
               <el-col v-if="isDesktop" :span="8" class="pub-images">
-                <el-image :src="srcASSETS25Hazel" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+                <el-image :src="srcASSETS25Hazel" style="padding-top: 3%;padding-bottom: 5%;" alt="FocusView teaser figure: Illustration of a distracted learner watching an educational video with visual and audio distractions like music and pop-ups in thought bubbles. The center shows a customizable video interface with controls for audio (denoise & enhance), background (blur/remove), layout options (original, auxiliary removal, speaker focus, content focus), and captions (color, font, size, position, highlight). A processed video on the right displays improved clarity with speaker focus and enhanced captions. Icons below indicate clear speech is kept while music is removed."></el-image>
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
@@ -79,7 +79,7 @@
                 </p>
                 <p class="project-conference">Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '25)
                   &nbsp;
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3663547.3746386" style="color:grey ;" target="_blank">[Paper]</a></span>
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3663547.3746386" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   Hanxiu 'Hazel' Zhu, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>2</sup></span>, Yuhang Zhao
@@ -93,7 +93,7 @@
             <div v-show="pubFilter === 'all' ||pubFilter === 'posters' || pubFilter === 'perception' || pubFilter === 'mr'">
               <el-row>
               <el-col v-if="isDesktop" :span="8" class="pub-images">
-                <el-image :src="srcCHI25EA" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+                <el-image :src="srcCHI25EA" style="padding-top: 3%;padding-bottom: 5%;" alt="This image shows an overview of task interpretations, illustrating: (A) Two primary writing behaviors when responding to drift: following drifted location absolutely versus estimating the un-drifted position; (B) Path deviations from center while following virtual drifted line (red) versus actual invisible line (white); (C) Participant's writing paper with original paper overlaid, showing appropriate blanks (blue boxes) and corresponding written words."></el-image>
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
@@ -101,8 +101,8 @@
                 </p>
                 <p class="project-conference">Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '25)
                   &nbsp;
-                  <span style="color:grey ;"><a href="https://www.youtube.com/watch?v=Mn6fU_YFgyE" style="color:grey ;" target="_blank">[Video]</a></span> 
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3706599.3720161" style="color:grey ;" target="_blank">[Paper]</a></span>
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=Mn6fU_YFgyE" style="color:rgb(45, 45, 45) ;" target="_blank">[Video]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3706599.3720161" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   Daniel Killough*, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>1</sup></span>*, Yuhang Zhao, Bilge Mutlu
@@ -118,7 +118,7 @@
             <div v-show="pubFilter === 'selected' || pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
               <el-row>
               <el-col v-if="isDesktop" :span="8" class="pub-images">
-                <el-image :src="srcVisiMark" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+                <el-image :src="srcVisiMark" style="padding-top: 3%;padding-bottom: 5%;" alt="This image shows VisiMark system. VisiMark provides landmark augmentations on head-mounted AR to support wayfinding and mental map construction. VisiMark includes two features: (A) Signboard, an overview of hallway structures and upcoming landmarks at intersections, and (B) In-situ Labels, world-anchored icons and texts to highlight the types and positions of landmarks in the physical environment."></el-image>
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
@@ -126,11 +126,11 @@
                 </p>
                 <p class="project-conference">Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)
                   &nbsp;
-                  <span style="color:grey ;"><a href="https://www.youtube.com/watch?v=LqkjHBSFaM0" style="color:grey ;" target="_blank">[Presentation]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=LqkjHBSFaM0" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
                   <!-- &nbsp; -->
-                  <span style="color:grey ;">&ensp;<a href="https://drive.google.com/file/d/1Nyx-t0yRIImjBIoKNLLwttbZ5fFA2Myd/view?usp=sharing" style="color:grey ;" target="_blank">[Demo]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://drive.google.com/file/d/1Nyx-t0yRIImjBIoKNLLwttbZ5fFA2Myd/view?usp=sharing" style="color:rgb(45, 45, 45) ;" target="_blank">[Demo]</a></span> 
                   <!-- &nbsp; -->
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style="color:grey ;" target="_blank">[Paper]</a></span>
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>1</sup></span>, Junru Jiang, Pragati Maheshwary, Brianna R Cochran, Yuhang Zhao
@@ -147,7 +147,7 @@
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'perception' || pubFilter === 'mr' || pubFilter === 'gaze'">
               <el-row>
               <el-col v-if="isDesktop" :span="8" class="pub-images-small">
-                <el-image :src="srcCHI25THU" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+                <el-image :src="srcCHI25THU" style="padding-top: 3%;padding-bottom: 5%;" alt="The apparatus of the formative study. Wearing aheadset, the participant wears three motion trackers to tracktheir arm pose and sit on a comfortable chair. While thevirtual avatar mirrors the arm movement of the participant,the participant observes the virtual avatar’s movement froma frst-person point of view and follows the semi-transparentcheckpoint pose to reach the semi-transparent target pose.As the secondary task, a virtual animation will start withdiferent durations and locations. The right fgure illustratesthe possible locations of the red ball, named Sparse, Median,and Dense, accordingly."></el-image>
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
@@ -155,8 +155,8 @@
                 </p>
                 <p class="project-conference">Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)
                   &nbsp;
-                  <span style="color:grey ;"><a href="https://www.youtube.com/watch?v=ZfLArnKg7gE" style="color:grey ;" target="_blank">[Video]</a></span> 
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713392" style="color:grey ;" target="_blank">[Paper]</a></span>
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=ZfLArnKg7gE" style="color:rgb(45, 45, 45) ;" target="_blank">[Video]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713392" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   Zhipeng Li, Yishu Ji, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>3</sup></span>, Tianqi Liu, Yuntao Wang, Yuanchun Shi, Yukang Yan
@@ -173,7 +173,7 @@
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'mr'">
               <el-row>
               <el-col v-if="isDesktop" :span="8" class="pub-images">
-                <el-image :src="srcCHI24" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+                <el-image :src="srcCHI24" style="padding-top: 3%;padding-bottom: 5%;" alt="The image presents different AR cues, such as overview cues, including (1) head-attached map, and (2) 3D Floor plan. Highlighting cues includes (1) door with shade and door with Contour. Directional cues include (1) single arrow pointing a POI, and (2) an array of arrows indicating a path. Labeling cues include (1) icon and text labeling an object, and (2) icons labeling a victim."></el-image>
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
@@ -181,8 +181,8 @@
                 </p>
                 <p class="project-conference">Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24)
                   &nbsp;
-                  <span style="color:grey ;"><a href="https://www.youtube.com/watch?v=ousbRtyklQI" style="color:grey ;" target="_blank">[Video]</a></span> 
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3613904.3642195" style="color:grey ;" target="_blank">[Paper]</a></span>
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=ousbRtyklQI" style="color:rgb(45, 45, 45) ;" target="_blank">[Video]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3613904.3642195" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   Kexin Zhang, Brianna R Cochran, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>3</sup></span>, Lance Hartung, Bryce Sprecher, Ross Tredinnick, Kevin Ponto, Suman Banerjee, Yuhang Zhao
@@ -197,7 +197,7 @@
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'perception' || pubFilter === 'mr'">
               <el-row>
               <el-col v-if="isDesktop" :span="8" class="pub-images-small">
-                <el-image :src="srcIMWUT22" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+                <el-image :src="srcIMWUT22" style="padding-top: 3%;padding-bottom: 5%;" alt="e investigate the effect of user-avatar movement inconsistency on body ownership. The image shows a person wearing a head-mounted VR headset, where the user's actual arm position is different from the virtual avatar."></el-image>
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
@@ -205,8 +205,8 @@
                 </p>
                 <p class="project-conference">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT '22)
                   &nbsp;
-                  <span style="color:grey ;"><a href="https://drive.google.com/file/d/15q4QfytW2d1L4mXLL7pibFZL5xWQFNT-/view?usp=sharing" style="color:grey ;" target="_blank">[Video]</a></span> 
-                  <span style="color:grey ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3534590" style="color:grey ;" target="_blank">[Paper]</a></span>
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://drive.google.com/file/d/15q4QfytW2d1L4mXLL7pibFZL5xWQFNT-/view?usp=sharing" style="color:rgb(45, 45, 45) ;" target="_blank">[Video]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3534590" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   Zhipeng Li, Yu Jiang, Yihao Zhu, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>4</sup></span>, Ruolin Wang, Yuntao Wang, Yukang Yan, Yuanchun Shi

@@ -4,34 +4,50 @@
       
       <el-container >
         <el-main style="padding-top: 0%;">
-          <el-tabs v-bind:value="activeNames.activeName" :key="activeNames" @tab-click="handleClick">
-            <el-tab-pane label="Home" name="home"  id="home">
+           <div class="top-nav">
+            <el-menu
+              :default-active="activeSection"
+              mode="horizontal"
+              class="nav-menu"
+              @select="handleNavSelect"
+            >
+              <el-menu-item index="home">Home</el-menu-item>
+              <el-menu-item index="pubSection">Publications</el-menu-item>
+              <el-menu-item index="internshipSection">Internships</el-menu-item>
+              <el-menu-item index="experiencesSection">Research Experiences</el-menu-item>
+              <el-menu-item index="servicesSection">Services and Teaching</el-menu-item>
+              <el-menu-item index="resume">Resume</el-menu-item>
+            </el-menu>
+          </div>
+          <!-- <el-tabs v-bind:value="activeNames.activeName" :key="activeNames" @tab-click="handleClick">
+            <el-tab-pane label="Home" name="home"  id="home" aria-labelledby="tab-home"> -->
+              <br/>
               <br/>
               <div>
-                <el-row>
+                <el-row id="home">
                 <el-col :span="isDesktop ? 5 : 24" style="text-align: center;padding-top: 0.6%;" class="avatar-col">
-                  <el-avatar :size="avatarSize" :src="avatarURL" shape="square"/>
+                  <el-avatar :size="avatarSize" :src="avatarURL" shape="square" alt="Ruijia Chen's avatar"/>
                   <el-row id="icons">
                       <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
-                      <a href="mailto:ruijia.chen@wisc.edu" style='color:black' class="icon">
+                      <a href="mailto:ruijia.chen@wisc.edu" style='color:black' class="icon" aria-label="Email Ruijia Chen">
                         <i class="fa fa-envelope" id="email"></i>
                       </a>
                       <span>&nbsp;&nbsp;</span>
-                      <a href="https://www.linkedin.com/in/ruijia-chen-094b48249/" target="_blank" style='color:black' rel="noopener noreferrer"  class="icon">
+                      <a href="https://www.linkedin.com/in/ruijia-chen-094b48249/" target="_blank" style='color:black' rel="noopener noreferrer"  class="icon" aria-label="LinkedIn">
                         <i class="fa fa-linkedin" id="linkedin"></i>
                       </a>
                       <span>&nbsp;&nbsp;</span>
-                      <a href="https://scholar.google.com/citations?user=jEHV3ucAAAAJ&hl=en&authuser=1" target="_blank" style='color:black' rel="noopener noreferrer"  class="icon">
+                      <a href="https://scholar.google.com/citations?user=jEHV3ucAAAAJ&hl=en&authuser=1" target="_blank" style='color:black' rel="noopener noreferrer"  class="icon" aria-label="Google Scholar">
                         <i class="fa fa-google" id="google"></i>
                       </a>
                       <span>&nbsp;&nbsp;</span>
-                      <a href="https://github.com/chenruijia120" target="_blank" style='color:black' rel="noopener noreferrer" class="icon">
+                      <a href="https://github.com/chenruijia120" target="_blank" style='color:black' rel="noopener noreferrer" class="icon" aria-label="GitHub">
                         <i class="fa fa-github" id="github"></i>
                       </a>
                   </el-row>
                 </el-col>
   
-                <el-col :span="isDesktop ? 19 : 24" style="padding-left: 4%;" class="text-col">
+                <el-col :span="isDesktop ? 19 : 24" style="padding-left: 4%; padding-right: 2.5%;" class="text-col">
                   <div class="myName">Ruijia Chen</div>
                   <div id="introduction">
                   <br/>
@@ -64,7 +80,7 @@
                   News
               </h5>
               <el-card :span="18" class="box-card no-padding" id="news">
-              <el-scrollbar class="scroll-box-el" style="padding-top: 0%;margin-top: 0%;" :always="true">
+              <el-scrollbar class="scroll-box-el" tabindex="0" style="padding-top: 0%;margin-top: 0%;" :always="true">
               <ul class="news-list" style="padding-top: 1%;margin: 0%;padding-left: 2%;padding-bottom: 1%;">
                 <li class="news-item">
                   <span class="news-date">Jan 15th, 2026</span>
@@ -126,14 +142,14 @@
               <ServicesSection id="servicesSection"/>
               <br/>
               <br/>
-            </el-tab-pane>
+            <!-- </el-tab-pane>
   
-            <el-tab-pane label="Publications" name="pub"></el-tab-pane>
-            <el-tab-pane label="Internships" name="internship"></el-tab-pane>
-            <el-tab-pane label="Research Experiences" name="experiences"></el-tab-pane>
-            <el-tab-pane label="Services and Teaching" name="services"></el-tab-pane>
-            <el-tab-pane label="Resume" name="resume"></el-tab-pane>
-          </el-tabs>
+            <el-tab-pane label="Publications" name="pub" aria-labelledby="tab-publications"></el-tab-pane>
+            <el-tab-pane label="Internships" name="internship" aria-labelledby="tab-internships"></el-tab-pane>
+            <el-tab-pane label="Research Experiences" name="experiences" aria-labelledby="tab-research-experiences"></el-tab-pane>
+            <el-tab-pane label="Services and Teaching" name="services" aria-labelledby="tab-services-and-teaching"></el-tab-pane>
+            <el-tab-pane label="Resume" name="resume" aria-labelledby="tab-resume"></el-tab-pane>
+          </el-tabs> -->
         </el-main>
   
         <el-backtop :right="100" :bottom="100" />
@@ -157,82 +173,51 @@ export default {
   },
   data() {
     return {
-      activeNames:{
-        activeName: 'home',
-        lastActiveName:'home',
-      },
+      activeSection: 'home',
       avatarURL: require('@/assets/photo2503.jpg'),
       windowWidth: document.documentElement.clientWidth,
       windowHeight: document.documentElement.clientHeight,
     };
   },
   methods: {
-    restoreActiveTab() {
-      this.activeNames = Object.assign({}, this.activeNames, {
-        activeName: this.activeNames.lastActiveName,
-        lastActiveName: this.activeNames.lastActiveName
-      })
-    },
-    handleClick(tab) {
-      if (tab.name === 'resume') {
-        window.open("https://drive.google.com/file/d/1a8mV8ntZzEHoXsRal8r_m023pGHoJWkt/view?usp=sharing", '_blank');
-        this.restoreActiveTab();
-      } 
-      // else if(tab.name === 'pub') {
-      //   this.restoreActiveTab();
-      //   const section = document.getElementById("PublicationsSection");
-      //   if (section) {
-      //     section.scrollIntoView({ behavior: "smooth" });
-      //   }
-      // }
-      else  if(tab.name === 'home'){
-        this.restoreActiveTab();
-        const section = document.getElementById(tab.name);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
+    handleNavSelect(index) {
+      if (index === 'resume') {
+        window.open(
+          "https://drive.google.com/file/d/1a8mV8ntZzEHoXsRal8r_m023pGHoJWkt/view?usp=sharing",
+          "_blank"
+        );
+        return;
       }
-      else {
-        this.restoreActiveTab();
-        const section = document.getElementById(tab.name+"Section");
-        if (section) {
-          section.style.scrollMarginTop = "80px";
-          section.scrollIntoView({ behavior: "smooth" });
-        }
+      
+      const el = document.getElementById(index);
+      if (el) {
+        el.style.scrollMarginTop = "90px";
+        el.scrollIntoView({ behavior: "smooth" });
+        this.activeSection = index;
       }
     },
   },
-    mounted(){
-      var that = this;
-        window.onresize = () => {
-          return (() => {
-            window.fullHeight = document.documentElement.clientHeight;
-              window.fullWidth = document.documentElement.clientWidth;
-            that.windowHeight = window.fullHeight;  // height
-            that.windowWidth = window.fullWidth; // width
-          })()
-        };
-    },
-    // watch: {
-    //   windowHeight (val) {
-    //     let that = this;
-    //     console.log("screen height:",val, that.windowHeight );
-    //   },
-    //   windowWidth (val) {
-    //     let that = this;
-    //     console.log("screen width:",val, that.windowHeight );
-    //   }
-    // },
+  mounted() {
+    this._onResize = () => {
+      this.windowHeight = document.documentElement.clientHeight;
+      this.windowWidth = document.documentElement.clientWidth;
+    };
+    window.addEventListener("resize", this._onResize, { passive: true });
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this._onResize);
+  },
   computed: {
     isDesktop() {
-      return this.windowWidth >=1050
+      return this.windowWidth >= 1050;
     },
     avatarSize() {
-    if (this.windowWidth <= 420) return 180;
-    if (this.windowWidth <= 1500) return 210;
-    return 280;
-  }
+      if (this.windowWidth <= 420) return 180;
+      if (this.windowWidth <= 1500) return 210;
+      return 280;
+    },
   },
+
 };
 </script>
 
@@ -240,9 +225,9 @@ export default {
   :root {
     --primary-color: #660066;
     --text-color: darkslategrey;
-    --secondary-text-color: darkgray;
-    --dark-grey:rgb(85, 85, 85);
-    --link-color: #9966CC;
+    --secondary-text-color: rgb(37, 37, 37);
+    --dark-grey:rgb(45, 45, 45);
+    --link-color: #4d2179;
     --conference-color:#910191;
   }
   .el-container{
@@ -392,6 +377,7 @@ export default {
     margin-left: 50px;
     color: rgb(79, 78, 78); 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 32px;
   }
 
   .scroll-box-el {
@@ -400,6 +386,10 @@ export default {
     border-radius: 6px;
     padding: 10px 14px;
     background: #fff; */
+  }
+
+  .scroll-box-el:focus {
+    outline: 2px solid #9966CC;
   }
 
   
@@ -458,14 +448,57 @@ export default {
   .no-padding .el-card__body { padding: 0 !important; }
   .pub-button span { font-size: 16px; }
 
+  .el-button--primary,
+  .el-button--primary:focus,
+  .el-button--primary:active,
+  .el-button--primary.is-focus {
+    color: #fff !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+  }
 
+  .top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    padding-top: 8px;
+  }
+
+  .nav-menu {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav-menu .el-menu-item {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .nav-menu .el-menu-item.is-active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+  }
+
+  .page-section {
+    scroll-margin-top: 90px;
+  }
 
   @media (max-width: 1050px){
     
+    .nav-menu {
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .nav-menu .el-menu-item {
+      font-size: 16px;
+      padding: 0 10px;
+    }
     .section{
       margin-left: 3%;
       color: rgb(79, 78, 78); 
       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+      font-size: 24px;
     }
     .el-tabs {
       font-size: 26px;
