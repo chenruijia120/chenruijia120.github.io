@@ -259,7 +259,7 @@
     // },
     computed: {
       isDesktop() {
-        return this.windowWidth >= 992;
+        return this.windowWidth >= 1050;
       }
   }
   };

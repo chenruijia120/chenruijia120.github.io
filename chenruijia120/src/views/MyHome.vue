@@ -225,11 +225,11 @@ export default {
     // },
   computed: {
     isDesktop() {
-      return this.windowWidth >=992
+      return this.windowWidth >=1050
     },
     avatarSize() {
     if (this.windowWidth <= 420) return 180;
-    if (this.windowWidth <= 900) return 220;
+    if (this.windowWidth <= 1500) return 210;
     return 280;
   }
   },
@@ -460,7 +460,7 @@ export default {
 
 
 
-  @media (max-width: 900px){
+  @media (max-width: 1050px){
     
     .section{
       margin-left: 3%;
@@ -503,7 +503,7 @@ export default {
     }
     #icons{
       /* margin-left: 0px; */
-      padding-left: 10%;
+      padding-left: 3%;
     }
     .icon{
       font-size: medium;
