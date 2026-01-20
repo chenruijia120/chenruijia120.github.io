@@ -2,7 +2,7 @@
     <div class="main" id="homeSection">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
-      <el-container >
+      <el-container style="padding: 1%;">
         <el-main style="padding-top: 0%;">
            <div class="top-nav">
             <el-menu
