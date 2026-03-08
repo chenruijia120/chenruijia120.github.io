@@ -5,7 +5,7 @@
         </h5>
         <el-card class="box-card" id="services">
             <p class="service_para">
-              Reviewer: TACCESS, MobileHCI'26,CHI'26, ICCV'25 workshop, CSCW'25 poster, IMWUT'24, ISMAR'24, SIGGRAPH'24 poster, CHI'24 LBW
+              Reviewer: TACCESS, MobileHCI'26, CHI'26, ICCV'25 workshop, CSCW'25 poster, IMWUT'24, ISMAR'24, SIGGRAPH'24 poster, CHI'24 LBW
             <!-- Reviewer: IMWUT'24, ISMAR'24, SIGGRAPH'24 poster, CHI'24 LBW -->
             </p>
             <el-divider></el-divider>
