@@ -23,10 +23,11 @@
             <el-card class="box-card" id="publications">
 
               
-            <!-- <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
+            <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
               <el-row>
               <el-col v-if="isDesktop" :span="8" class="pub-images" alt="NaviNote teaser figure: A five-stage pipeline is shown with 5 panels. Each panel shows a user with a vest and speech bubbles communicating between NaviNote and the user. In (1), the user asks, ``Where am I?'' The system responds: ``You're at the park entrance. There's a statue nearby...'' The user follows up: ``Please, guide me to the statue!''; In (2) NaviNote provides navigation instructions, ``Walk straight for 15 meters...'', ``... podium ahead at 10 o'clock''; In (3) the user listens to a nearby spatial annotation, ``Be careful, there are 16 steps ahead''; In (4) the user asks: ``What did others say about the statue?'' The system responds: ``One annotation notes the statue is of Cicero, a famed orator, lawyer and politician.''; In (5) the user creates their own spatial annotation, ``There's a nice café with accessible restrooms here.''. During the interaction, the user wears a vest that holds the smartphone with camera facing forward, and localizes their precise positions using Visual Positioning System (VPS) in a pre-scanned area on the smartphone.">
-                <el-image :src="srcNaviNote" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+                <div class="image-placeholder">Coming soon</div>
+                <!-- <el-image :src="srcNaviNote" style="padding-top: 3%;padding-bottom: 5%;"></el-image> -->
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
@@ -41,8 +42,7 @@
               </el-col>
               </el-row>
             <el-divider></el-divider>
-            </div> -->
-                <!-- <div class="image-placeholder">Coming soon</div> -->
+            </div>
             
             
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'gaze'">
