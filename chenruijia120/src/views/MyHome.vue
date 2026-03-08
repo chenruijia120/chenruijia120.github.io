@@ -85,7 +85,7 @@
                 <li class="news-item">
                   <span class="news-date">Jan 15th, 2026</span>
                   <span class="news-text">
-                    NaviNote, my internship project at Niantic Spatial, has been conditionally accepted to CHI'26!
+                    NaviNote, my internship project at Niantic Spatial, has been accepted to CHI'26!
                   </span>
                 </li>
                 <li class="news-item">
