@@ -91,7 +91,7 @@
                 <li class="news-item">
                   <span class="news-date">Jun 18th, 2025</span>
                   <span class="news-text">
-                    Two papers accepted to ASSETS 2025. Congratulations to my co-authors!
+                    Two papers accepted to ASSETS'25. Congratulations to my co-authors!
                   </span>
                 </li>
                 <li class="news-item">
