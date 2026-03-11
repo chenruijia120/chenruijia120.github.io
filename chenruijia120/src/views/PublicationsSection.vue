@@ -34,8 +34,8 @@
                   NaviNote: Enabling In-situ Spatial Annotation Authoring to Support Exploration and Navigation for Blind and Low Vision People
                 </p>
                 <p class="project-conference">To appear at CHI'26, 🏆Honourable Mention Award
-                  <!-- &nbsp;
-                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span> -->
+                  &nbsp;
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://arxiv.org/pdf/2603.08837" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
                   <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen<sup>1</sup></span>*, Yuheng Wu*, Charlie Houseago, Filipe Gaspar, Filippo Aleotti, Dorian Gálvez-López, Oliver Johnston, Diego Mazala, Guillermo Garcia-Hernando, Maryam Bandukda, Gabriel Brostow, Jessica Van Brummelen
