@@ -35,6 +35,7 @@
                 </p>
                 <p class="project-conference">To appear at CHI'26, 🏆Honourable Mention Award
                   &nbsp;
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=M0kIoho02hM" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
                   <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://arxiv.org/pdf/2603.08837" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">

@@ -83,9 +83,15 @@
               <el-scrollbar class="scroll-box-el" tabindex="0" style="padding-top: 0%;margin-top: 0%;" :always="true">
               <ul class="news-list" style="padding-top: 1%;margin: 0%;padding-left: 2%;padding-bottom: 1%;">
                 <li class="news-item">
+                  <span class="news-date">Mar 8th, 2026</span>
+                  <span class="news-text">
+                    <a href="https://arxiv.org/pdf/2603.08837">NaviNote</a> received Best Paper Honorable Mention Award at CHI'26!
+                  </span>
+                </li>
+                <li class="news-item">
                   <span class="news-date">Jan 15th, 2026</span>
                   <span class="news-text">
-                    NaviNote, my internship project at Niantic Spatial, has been accepted to CHI'26!
+                    <a href="https://arxiv.org/pdf/2603.08837">NaviNote</a>, my internship project at Niantic Spatial, has been accepted to CHI'26!
                   </span>
                 </li>
                 <li class="news-item">
