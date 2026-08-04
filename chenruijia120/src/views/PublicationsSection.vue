@@ -77,6 +77,32 @@
             <el-divider></el-divider>
             <!-- </div> -->
             </div>
+
+            
+
+            <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
+              <el-row>
+              <el-col v-if="isDesktop" :span="8" class="pub-images" alt="SceneGlance augmenting two cluttered scenes for low-vision users, shown side by side. Left, labeled OUTDOOR: a busy street where cyclists, bicycles, cars, pedestrians, and traffic and pedestrian signals are outlined in green to mark higher importance, while the sidewalk and other objects are outlined in blue. Right, labeled INDOOR: a kitchen counter where knives, cups, and a bottle carry yellow solid overlays for higher importance, while utensils, bowls, and other items are outlined in blue.">
+                <!-- <div class="image-placeholder">Coming soon</div> -->
+                <el-image :src="srcASSETS26" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
+              </el-col>
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
+                <p class="project-title">
+                  What to Distinguish and How? Opportunities and Challenges of Augmenting Multiple, Cluttered Objects in Complex Scenes for People with Low Vision
+                </p>
+                <p class="project-conference">To appear at ASSETS '26
+                  &nbsp;
+                  <!-- <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=M0kIoho02hM" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span>  -->
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://arxiv.org/abs/2607.10902" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
+                </p>
+                <p class="project-author">
+                  Yuheng Wu, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Jaewook Lee, Jia Li, Kexin Zhang, Meng Fong Lio, and Weibing Wang, Sanbrita Mondal, Jon E. Froehlich, Yapeng Tian, Yuhang Zhao
+                </p>
+                <div style="margin-top:2% ;"></div>
+              </el-col>
+              </el-row>
+            <el-divider></el-divider>
+            </div>
             
             <div v-show="pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y'">
               <el-row>
@@ -102,30 +128,6 @@
             <el-divider></el-divider>
             </div>
 
-
-            <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
-              <el-row>
-              <el-col v-if="isDesktop" :span="8" class="pub-images" alt="SceneGlance augmenting two cluttered scenes for low-vision users, shown side by side. Left, labeled OUTDOOR: a busy street where cyclists, bicycles, cars, pedestrians, and traffic and pedestrian signals are outlined in green to mark higher importance, while the sidewalk and other objects are outlined in blue. Right, labeled INDOOR: a kitchen counter where knives, cups, and a bottle carry yellow solid overlays for higher importance, while utensils, bowls, and other items are outlined in blue.">
-                <!-- <div class="image-placeholder">Coming soon</div> -->
-                <el-image :src="srcASSETS26" style="padding-top: 3%;padding-bottom: 5%;"></el-image>
-              </el-col>
-              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
-                <p class="project-title">
-                  What to Distinguish and How? Opportunities and Challenges of Augmenting Multiple, Cluttered Objects in Complex Scenes for People with Low Vision
-                </p>
-                <p class="project-conference">To appear at ASSETS '26
-                  &nbsp;
-                  <!-- <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=M0kIoho02hM" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span>  -->
-                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://arxiv.org/abs/2607.10902" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
-                </p>
-                <p class="project-author">
-                  Yuheng Wu, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Jaewook Lee, Jia Li, Kexin Zhang, Meng Fong Lio, and Weibing Wang, Sanbrita Mondal, Jon E. Froehlich, Yapeng Tian, Yuhang Zhao
-                </p>
-                <div style="margin-top:2% ;"></div>
-              </el-col>
-              </el-row>
-            <el-divider></el-divider>
-            </div>
             
             
             
