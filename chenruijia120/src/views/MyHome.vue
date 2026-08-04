@@ -25,7 +25,7 @@
               <br/>
               <div>
                 <el-row id="home">
-                <el-col :span="isDesktop ? 5 : 24" style="text-align: center;padding-top: 0.6%;" class="avatar-col">
+                <el-col :span="isDesktop ? 5 : 24" style="text-align: center;padding-top: 1.6%;" class="avatar-col">
                   <el-avatar :size="avatarSize" :src="avatarURL" shape="square" alt="Ruijia Chen's avatar"/>
                   <el-row id="icons">
                       <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
@@ -47,7 +47,7 @@
                   </el-row>
                 </el-col>
   
-                <el-col :span="isDesktop ? 19 : 24" style="padding-left: 4%; padding-right: 2.5%;" class="text-col">
+                <el-col :span="isDesktop ? 19 : 24" style="padding-left: 4%; padding-right: 5%;" class="text-col">
                   <div class="myName">Ruijia Chen</div>
                   <div id="introduction">
                   <br/>
@@ -55,7 +55,7 @@
                     Welcome! My name is Ruijia Chen, pronounced as ray-jar (in Chinese: 陈睿嘉).
                   </p>
                   <p class="paragraph">
-                    I am currently a third-year Ph.D. student in Computer Science at the University of Wisconsin-Madison, advised by <a href="https://www.yuhangz.com/" style='color:var(--link-color)' target="_blank">Prof. Yuhang Zhao</a>. 
+                    I am a rising fourth-year Ph.D. student in <a href="https://madability.cs.wisc.edu/" style='color:var(--link-color)' target="_blank">MadAbility Lab</a>, Computer Sciences at the University of Wisconsin-Madison, advised by <a href="https://www.yuhangz.com/" style='color:var(--link-color)' target="_blank">Prof. Yuhang Zhao</a>. 
                     Previously, I completed my B.E. in Computer Science at Tsinghua University, advised by <a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/" style='color:var(--link-color)' target="_blank">Prof. Yuntao Wang</a>.
                     <!-- <a href="https://pi.cs.tsinghua.edu.cn/" style='color:#9966CC' target="_blank">Pervasive Interaction Lab, Department of Computer Science, Tsinghua University</a>. -->
                   </p>
@@ -83,21 +83,39 @@
               <el-scrollbar class="scroll-box-el" tabindex="0" style="padding-top: 0%;margin-top: 0%;" :always="true">
               <ul class="news-list" style="padding-top: 1%;margin: 0%;padding-left: 2%;padding-bottom: 1%;">
                 <li class="news-item">
+                  <span class="news-date">Jun 25th, 2026</span>
+                  <span class="news-text">
+                    One paper accepted to ASSETS '26. Congratulations to my co-authors!
+                  </span>
+                </li>
+                <li class="news-item">
+                  <span class="news-date">Jun 18th, 2026</span>
+                  <span class="news-text">
+                    One paper accepted to ASE '26. Congratulations to my co-authors!
+                  </span>
+                </li>
+                <li class="news-item">
+                  <span class="news-date">May 7th, 2026</span>
+                  <span class="news-text">
+                    I passed my qualifying exam!
+                  </span>
+                </li>
+                <li class="news-item">
                   <span class="news-date">Mar 8th, 2026</span>
                   <span class="news-text">
-                    <a href="https://arxiv.org/pdf/2603.08837">NaviNote</a> received Best Paper Honorable Mention Award at CHI'26!
+                    <a href="https://arxiv.org/pdf/2603.08837">NaviNote</a> received Best Paper Honorable Mention Award at CHI '26!
                   </span>
                 </li>
                 <li class="news-item">
                   <span class="news-date">Jan 15th, 2026</span>
                   <span class="news-text">
-                    <a href="https://arxiv.org/pdf/2603.08837">NaviNote</a>, my internship project at Niantic Spatial, has been accepted to CHI'26!
+                    <a href="https://arxiv.org/pdf/2603.08837">NaviNote</a>, my internship project at Niantic Spatial, has been accepted to CHI '26!
                   </span>
                 </li>
                 <li class="news-item">
                   <span class="news-date">Jun 18th, 2025</span>
                   <span class="news-text">
-                    Two papers accepted to ASSETS'25. Congratulations to my co-authors!
+                    Two papers accepted to ASSETS '25. Congratulations to my co-authors!
                   </span>
                 </li>
                 <li class="news-item">
@@ -109,25 +127,25 @@
                 <li class="news-item">
                   <span class="news-date">May 1st, 2025</span>
                   <span class="news-text">
-                    Presented <a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style='color:var(--link-color)' target="_blank">VisiMark</a> at CHI'25 in Yokohama, Japan!
+                    Presented <a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style='color:var(--link-color)' target="_blank">VisiMark</a> at CHI '25 in Yokohama, Japan!
                   </span>
                 </li>
                 <li class="news-item">
                   <span class="news-date">Apr 26th, 2025</span>
                   <span class="news-text">
-                    Excited to be a student volunteer at CHI'25!
+                    Excited to be a student volunteer at CHI '25!
                   </span>
                 </li>
                 <li class="news-item">
                   <span class="news-date">Feb 22th, 2025</span>
                   <span class="news-text">
-                    One poster accepted to CHI'25!
+                    One poster accepted to CHI '25!
                   </span>
                 </li>
                 <li class="news-item">
                   <span class="news-date">Jan 16th, 2025</span>
                   <span class="news-text">
-                    Two full papers accepted to CHI'25!
+                    Two full papers accepted to CHI '25!
                   </span>
                 </li>
               </ul>
@@ -264,11 +282,19 @@ export default {
     position: relative;
   }
 
-  #homeSection {
-    height: 100%;
+  #homeSection > .el-container {
+    width: min(calc(100%), 1300px);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
     overflow: visible;
     position: relative;
   }
+  /* #homeSection {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+  } */
 
 
   .el-tab-pane {
@@ -402,7 +428,7 @@ export default {
   }
 
   .section{
-    margin-left: 50px;
+    margin-left: 30px;
     color: rgb(79, 78, 78); 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 32px;
