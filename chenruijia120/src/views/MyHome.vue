@@ -272,7 +272,7 @@ export default {
     --primary-color: #660066;
     --text-color: darkslategrey;
     --secondary-text-color: rgb(37, 37, 37);
-    --dark-grey:rgb(45, 45, 45);
+    --dark-grey:rgb(91, 91, 91);
     --link-color: #4d2179;
     --conference-color:#910191;
   }
@@ -429,7 +429,7 @@ export default {
 
   .section{
     margin-left: 30px;
-    color: rgb(79, 78, 78); 
+    color: var(--dark-grey);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 32px;
   }
@@ -492,7 +492,7 @@ export default {
 
     font-family: "Times New Roman", Times, serif;
     font-size: x-large;
-    color: #343434;
+    color: var(--dark-grey);
     font-style: italic;
 
     border: 1px dashed #ddd;
@@ -535,11 +535,14 @@ export default {
     font-size: 20px;
     font-weight: 500;
   }
-
   .nav-menu .el-menu-item.is-active {
     color: var(--primary-color) !important;
     border-bottom: 2px solid var(--primary-color) !important;
   }
+
+  .nav-menu.el-menu--horizontal > .el-menu-item {
+  color: var(--dark-grey);
+}
 
   .page-section {
     scroll-margin-top: 90px;
@@ -557,7 +560,7 @@ export default {
     }
     .section{
       margin-left: 3%;
-      color: rgb(79, 78, 78); 
+      color: var(--dark-grey);
       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
       font-size: 24px;
     }
