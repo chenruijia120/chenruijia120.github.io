@@ -119,7 +119,8 @@
                 <p class="project-title">
                   Demonstration of VisiAgent: A Mixed Reality Agent with Visual Reference and Guidance for People with Low Vision
                 </p>
-                <p class="project-conference">Adjunct Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26 Adjunct)
+                <p class="project-conference">To appear at UIST '26 Adjunct
+                <!-- <p class="project-conference">Adjunct Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26 Adjunct) -->
                   <!-- &nbsp;
                   <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=M0kIoho02hM" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
                   <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3772318.3790589" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span> -->
@@ -146,7 +147,8 @@
                 <p class="project-title">
                   Demonstration of ScoreSight: Real-time Piano Music Reading Support for People with Decreased Central Vision
                 </p>
-                <p class="project-conference">Adjunct Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26 Adjunct)
+                <p class="project-conference">To appear at UIST '26 Adjunct
+                <!-- <p class="project-conference">Adjunct Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26 Adjunct) -->
                   <!-- &nbsp;
                   <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=M0kIoho02hM" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
                   <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3772318.3790589" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span> -->
