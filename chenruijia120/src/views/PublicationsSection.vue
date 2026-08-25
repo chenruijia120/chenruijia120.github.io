@@ -18,7 +18,7 @@
 
 
             <p style="margin-left: 4.5%;margin-top: 2%;margin-bottom: 0%;font-size: large;font-family:'Times New Roman', Times, serif;">
-              * Authors contributed equally to this research.</p>
+              * indicates equal contribution; † indicates the mentoring role</p>
             <br/>
             <el-card class="box-card" id="publications">
 
@@ -104,6 +104,60 @@
             <!-- <div v-show="pubFilter !=='selected' && pubFilter !=='a11y'"> -->
             <el-divider></el-divider>
             <!-- </div> -->
+            </div>
+
+            
+            <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'posters' || pubFilter === 'a11y' || pubFilter === 'mr'">
+              <el-row>
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
+                <!-- <div class="image-placeholder">Coming soon</div> -->
+                <el-image :src="srcVisiAgentDemo" style="padding-top: 3%;padding-bottom: 5%;" 
+                  alt="Demonstration of VisiAgent. VisiAgent supports people with low vision (PLV) in grounding visual references and receiving synchronized multimodal feedback during daily tasks. We illustrate VisiRef across several challenging daily tasks for PLV. (A) VisiAgent shows a cursor that indicates the user's attention and applies semi-transparent color overlays to objects swept by the user's pointing as candidate visual references. (B) When the user asks to compare similar objects, VisiAgent provides distinguishing information (i.e., different flavors) and highlights relevant parts of each object in sync with the audio narration. (C) When the user is completing an aiming task, VisiAgent outlines the source target (i.e., bottle opening) and destination target (i.e., mug rim), and renders a trajectory to guide alignment. (D) If the user is searching for a target, VisiAgent outlines the target and provides an arrow cue to guide the user's attention. When VisiAgent describes the target, it outlines relevant details according to the audio narration. (E) VisiAgent provides timely intervention when needed. For example, when the user's hand approaches a nearby hazard (e.g., scissors), VisiAgent highlights the danger with a flashing outline and provides a spatial audio warning."
+                 class="zoomable-image" tabindex="0" @click.native="openImagePreview($event)" @keydown.enter.native="openImagePreview($event)" @keydown.space.native.prevent="openImagePreview($event)"></el-image>
+                </el-col>
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
+                <p class="project-title">
+                  Demonstration of VisiAgent: A Mixed Reality Agent with Visual Reference and Guidance for People with Low Vision
+                </p>
+                <p class="project-conference">Adjunct Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26 Adjunct)
+                  <!-- &nbsp;
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=M0kIoho02hM" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3772318.3790589" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span> -->
+                </p>
+                <p class="project-author">
+                  <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Yuhang Zhao
+                </p>
+                <div style="margin-top:2% ;"></div>
+              </el-col>
+              </el-row>
+            <el-divider></el-divider>
+            </div>
+
+            
+            <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'posters' || pubFilter === 'a11y' || pubFilter === 'mr'">
+              <el-row>
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
+                <!-- <div class="image-placeholder">Coming soon</div> -->
+                <el-image :src="srcScoreSightDemo" style="padding-top: 3%;padding-bottom: 5%;" 
+                  alt="Interface and key features of ScoreSight, shown in three parts. A dash-dotted line indicates the natural preview behavior across the line transition. (a) Real-Time Following continuously tracks the musician’s live performance with a dynamic magnifier lens centered on the current playing position. As the magnifier approaches the end of a staff line, a preview magnifier appears at the beginning of the next line. (b) Visual Guidance shows a simplified guidance score that preserves staff lines, clefs, and barlines while removing detailed musical notation. A guidance line connects consecutive note positions, with breaks at rests and staff boundaries, and event markers highlight large leaps and chords. (c) Customization shows interface controls that allow low-vision musicians to adjust magnification, interface colors, and the guidance line color based on their visual needs and reading preferences."
+                 class="zoomable-image" tabindex="0" @click.native="openImagePreview($event)" @keydown.enter.native="openImagePreview($event)" @keydown.space.native.prevent="openImagePreview($event)"></el-image>
+                </el-col>
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
+                <p class="project-title">
+                  Demonstration of ScoreSight: Real-time Piano Music Reading Support for People with Decreased Central Vision
+                </p>
+                <p class="project-conference">Adjunct Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26 Adjunct)
+                  <!-- &nbsp;
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=M0kIoho02hM" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3772318.3790589" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span> -->
+                </p>
+                <p class="project-author">
+                  Tianyi Zhang, Yihan Wu, Varun Ganesh, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>†, Yuhang Zhao
+                </p>
+                <div style="margin-top:2% ;"></div>
+              </el-col>
+              </el-row>
+            <el-divider></el-divider>
             </div>
 
             
@@ -345,6 +399,8 @@
         srcASSETS26:require('@/assets/ASSETS26.png'),
         srcASE26:require('@/assets/ASE26.png'),
         srcArxiv:require('@/assets/arxiv2026.png'),
+        srcVisiAgentDemo:require('@/assets/VisiAgentDemo.png'),
+        srcScoreSightDemo:require('@/assets/ScoreSightDemo.png'),
         windowWidth: document.documentElement.clientWidth,
         windowHeight: document.documentElement.clientHeight,
       };

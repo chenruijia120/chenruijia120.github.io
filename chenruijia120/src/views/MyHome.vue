@@ -81,7 +81,13 @@
               </h5>
               <el-card :span="18" class="box-card no-padding" id="news">
               <el-scrollbar class="scroll-box-el" tabindex="0" style="padding-top: 0%;margin-top: 0%;" :always="true">
-              <ul class="news-list" style="padding-top: 1%;margin: 0%;padding-left: 2%;padding-bottom: 1%;">
+              <ul class="news-list" style="padding-top: 1%;margin: 0%;padding-left: 2%;padding-right: 2%;padding-bottom: 1%;">
+                <li class="news-item">
+                  <span class="news-date">Aug 15th, 2026</span>
+                  <span class="news-text">
+                    Two demos accepted to UIST '26! I am excited to be presenting VisiAgent and to see ScoreSight accepted, marking my first time serving in a mentoring role on a paper.
+                  </span>
+                </li>
                 <li class="news-item">
                   <span class="news-date">Jun 25th, 2026</span>
                   <span class="news-text">
@@ -97,7 +103,7 @@
                 <li class="news-item">
                   <span class="news-date">May 7th, 2026</span>
                   <span class="news-text">
-                    I passed my qualifying exam!
+                    I passed my qualifying exam! Huge thanks to my advisor Prof. Yuhang Zhao and my committee members Prof. Bilge Mutlu and Prof. Kevin Ponto for their guidance and support!
                   </span>
                 </li>
                 <li class="news-item">
