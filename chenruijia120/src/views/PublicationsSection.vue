@@ -51,60 +51,6 @@
 
             
 
-            <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
-              <el-row>
-              <el-col v-if="isDesktop" :span="8" class="pub-images">
-                <!-- <div class="image-placeholder">Coming soon</div> -->
-                <el-image :src="srcNaviNote" style="padding-top: 3%;padding-bottom: 5%;" 
-                  alt="NaviNote teaser figure: A five-stage pipeline is shown with five panels. Each panel shows a user wearing a vest and speech bubbles representing communication between NaviNote and the user. In (1), the user asks, &quot;Where am I?&quot; The system responds, &quot;You're at the park entrance. There's a statue nearby...&quot; The user follows up, &quot;Please guide me to the statue!&quot; In (2), NaviNote provides navigation instructions: &quot;Walk straight for 15 meters...&quot; and &quot;...podium ahead at 10 o'clock.&quot; In (3), the user listens to a nearby spatial annotation: &quot;Be careful, there are 16 steps ahead.&quot; In (4), the user asks, &quot;What did others say about the statue?&quot; The system responds, &quot;One annotation notes that the statue is of Cicero, a famed orator, lawyer, and politician.&quot; In (5), the user creates a spatial annotation: &quot;There's a nice café with accessible restrooms here.&quot; During the interaction, the user wears a vest that holds a smartphone with its camera facing forward. The smartphone uses a Visual Positioning System (VPS) to determine the user's precise position within a pre-scanned area."
-                 class="zoomable-image" tabindex="0" @click.native="openImagePreview($event)" @keydown.enter.native="openImagePreview($event)" @keydown.space.native.prevent="openImagePreview($event)"></el-image>
-                </el-col>
-              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
-                <p class="project-title">
-                  NaviNote: Enabling In-situ Spatial Annotation Authoring to Support Exploration and Navigation for Blind and Low Vision People
-                </p>
-                <p class="project-conference">🏆Honourable Mention Award, Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26)
-                  &nbsp;
-                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=M0kIoho02hM" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
-                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3772318.3790589" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
-                </p>
-                <p class="project-author">
-                  <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>*, Yuheng Wu*, Charlie Houseago, Filipe Gaspar, Filippo Aleotti, Dorian Gálvez-López, Oliver Johnston, Diego Mazala, Guillermo Garcia-Hernando, Maryam Bandukda, Gabriel Brostow, Jessica Van Brummelen
-                </p>
-                <div style="margin-top:2% ;"></div>
-              </el-col>
-              </el-row>
-            <el-divider></el-divider>
-            </div>
-
-            <div v-show="pubFilter === 'selected' || pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
-              <el-row>
-              <el-col v-if="isDesktop" :span="8" class="pub-images">
-                <el-image :src="srcVisiMark" style="padding-top: 3%;padding-bottom: 5%;" alt="This image shows VisiMark system. VisiMark provides landmark augmentations on head-mounted AR to support wayfinding and mental map construction. VisiMark includes two features: (A) Signboard, an overview of hallway structures and upcoming landmarks at intersections, and (B) In-situ Labels, world-anchored icons and texts to highlight the types and positions of landmarks in the physical environment." class="zoomable-image" tabindex="0" @click.native="openImagePreview($event)" @keydown.enter.native="openImagePreview($event)" @keydown.space.native.prevent="openImagePreview($event)"></el-image>
-              </el-col>
-              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
-                <p class="project-title">
-                  VisiMark: Characterizing and Augmenting Landmarks for People with Low Vision in Augmented Reality to Support Indoor Navigation
-                </p>
-                <p class="project-conference">Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)
-                  &nbsp;
-                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=LqkjHBSFaM0" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
-                  <!-- &nbsp; -->
-                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://drive.google.com/file/d/1Nyx-t0yRIImjBIoKNLLwttbZ5fFA2Myd/view?usp=sharing" style="color:rgb(45, 45, 45) ;" target="_blank">[Demo]</a></span> 
-                  <!-- &nbsp; -->
-                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
-                </p>
-                <p class="project-author">
-                  <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Junru Jiang, Pragati Maheshwary, Brianna R Cochran, Yuhang Zhao
-                </p>
-                <div style="margin-top:2% ;"></div>
-              </el-col>
-              </el-row>
-
-            <!-- <div v-show="pubFilter !=='selected' && pubFilter !=='a11y'"> -->
-            <el-divider></el-divider>
-            <!-- </div> -->
-            </div>
 
             
             <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'posters' || pubFilter === 'a11y' || pubFilter === 'mr'">
@@ -163,6 +109,31 @@
             </div>
 
             
+            <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
+              <el-row>
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
+                <!-- <div class="image-placeholder">Coming soon</div> -->
+                <el-image :src="srcNaviNote" style="padding-top: 3%;padding-bottom: 5%;" 
+                  alt="NaviNote teaser figure: A five-stage pipeline is shown with five panels. Each panel shows a user wearing a vest and speech bubbles representing communication between NaviNote and the user. In (1), the user asks, &quot;Where am I?&quot; The system responds, &quot;You're at the park entrance. There's a statue nearby...&quot; The user follows up, &quot;Please guide me to the statue!&quot; In (2), NaviNote provides navigation instructions: &quot;Walk straight for 15 meters...&quot; and &quot;...podium ahead at 10 o'clock.&quot; In (3), the user listens to a nearby spatial annotation: &quot;Be careful, there are 16 steps ahead.&quot; In (4), the user asks, &quot;What did others say about the statue?&quot; The system responds, &quot;One annotation notes that the statue is of Cicero, a famed orator, lawyer, and politician.&quot; In (5), the user creates a spatial annotation: &quot;There's a nice café with accessible restrooms here.&quot; During the interaction, the user wears a vest that holds a smartphone with its camera facing forward. The smartphone uses a Visual Positioning System (VPS) to determine the user's precise position within a pre-scanned area."
+                 class="zoomable-image" tabindex="0" @click.native="openImagePreview($event)" @keydown.enter.native="openImagePreview($event)" @keydown.space.native.prevent="openImagePreview($event)"></el-image>
+                </el-col>
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
+                <p class="project-title">
+                  NaviNote: Enabling In-situ Spatial Annotation Authoring to Support Exploration and Navigation for Blind and Low Vision People
+                </p>
+                <p class="project-conference">🏆Honourable Mention Award, Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26)
+                  &nbsp;
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=M0kIoho02hM" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3772318.3790589" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
+                </p>
+                <p class="project-author">
+                  <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>*, Yuheng Wu*, Charlie Houseago, Filipe Gaspar, Filippo Aleotti, Dorian Gálvez-López, Oliver Johnston, Diego Mazala, Guillermo Garcia-Hernando, Maryam Bandukda, Gabriel Brostow, Jessica Van Brummelen
+                </p>
+                <div style="margin-top:2% ;"></div>
+              </el-col>
+              </el-row>
+            <el-divider></el-divider>
+            </div>
 
             <div v-show="pubFilter === 'selected' || pubFilter === 'all' || pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
               <el-row>
@@ -260,32 +231,36 @@
 
             <el-divider></el-divider></div>
 
-            <div v-show="pubFilter === 'all' ||pubFilter === 'posters' || pubFilter === 'perception' || pubFilter === 'mr'">
+            
+            <div v-show="pubFilter === 'selected' || pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'a11y' || pubFilter === 'mr'">
               <el-row>
               <el-col v-if="isDesktop" :span="8" class="pub-images">
-                <el-image :src="srcCHI25EA" style="padding-top: 3%;padding-bottom: 5%;" alt="This image shows an overview of task interpretations, illustrating: (A) Two primary writing behaviors when responding to drift: following drifted location absolutely versus estimating the un-drifted position; (B) Path deviations from center while following virtual drifted line (red) versus actual invisible line (white); (C) Participant's writing paper with original paper overlaid, showing appropriate blanks (blue boxes) and corresponding written words." class="zoomable-image" tabindex="0" @click.native="openImagePreview($event)" @keydown.enter.native="openImagePreview($event)" @keydown.space.native.prevent="openImagePreview($event)"></el-image>
+                <el-image :src="srcVisiMark" style="padding-top: 3%;padding-bottom: 5%;" alt="This image shows VisiMark system. VisiMark provides landmark augmentations on head-mounted AR to support wayfinding and mental map construction. VisiMark includes two features: (A) Signboard, an overview of hallway structures and upcoming landmarks at intersections, and (B) In-situ Labels, world-anchored icons and texts to highlight the types and positions of landmarks in the physical environment." class="zoomable-image" tabindex="0" @click.native="openImagePreview($event)" @keydown.enter.native="openImagePreview($event)" @keydown.space.native.prevent="openImagePreview($event)"></el-image>
               </el-col>
               <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
                 <p class="project-title">
-                  Understanding Mixed Reality Drift Tolerance
+                  VisiMark: Characterizing and Augmenting Landmarks for People with Low Vision in Augmented Reality to Support Indoor Navigation
                 </p>
-                <p class="project-conference">Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '25)
+                <p class="project-conference">Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)
                   &nbsp;
-                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=Mn6fU_YFgyE" style="color:rgb(45, 45, 45) ;" target="_blank">[Video]</a></span> 
-                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3706599.3720161" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=LqkjHBSFaM0" style="color:rgb(45, 45, 45) ;" target="_blank">[Presentation]</a></span> 
+                  <!-- &nbsp; -->
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://drive.google.com/file/d/1Nyx-t0yRIImjBIoKNLLwttbZ5fFA2Myd/view?usp=sharing" style="color:rgb(45, 45, 45) ;" target="_blank">[Demo]</a></span> 
+                  <!-- &nbsp; -->
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/full/10.1145/3706598.3713847" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
                 </p>
                 <p class="project-author">
-                  Daniel Killough*, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>*, Yuhang Zhao, Bilge Mutlu
+                  <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>, Junru Jiang, Pragati Maheshwary, Brianna R Cochran, Yuhang Zhao
                 </p>
                 <div style="margin-top:2% ;"></div>
               </el-col>
               </el-row>
-            <div v-show="pubFilter !=='posters'">
+
+            <!-- <div v-show="pubFilter !=='selected' && pubFilter !=='a11y'"> -->
             <el-divider></el-divider>
-            </div>
+            <!-- </div> -->
             </div>
 
-            
 
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'perception' || pubFilter === 'mr' || pubFilter === 'gaze'">
               <el-row>
@@ -313,6 +288,32 @@
             <el-divider></el-divider>
             </div>
             </div>
+            <div v-show="pubFilter === 'all' ||pubFilter === 'posters' || pubFilter === 'perception' || pubFilter === 'mr'">
+              <el-row>
+              <el-col v-if="isDesktop" :span="8" class="pub-images">
+                <el-image :src="srcCHI25EA" style="padding-top: 3%;padding-bottom: 5%;" alt="This image shows an overview of task interpretations, illustrating: (A) Two primary writing behaviors when responding to drift: following drifted location absolutely versus estimating the un-drifted position; (B) Path deviations from center while following virtual drifted line (red) versus actual invisible line (white); (C) Participant's writing paper with original paper overlaid, showing appropriate blanks (blue boxes) and corresponding written words." class="zoomable-image" tabindex="0" @click.native="openImagePreview($event)" @keydown.enter.native="openImagePreview($event)" @keydown.space.native.prevent="openImagePreview($event)"></el-image>
+              </el-col>
+              <el-col :span="isDesktop ? 15 : 24" style="margin-left: 2%;">
+                <p class="project-title">
+                  Understanding Mixed Reality Drift Tolerance
+                </p>
+                <p class="project-conference">Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '25)
+                  &nbsp;
+                  <span style="color:rgb(45, 45, 45) ;"><a href="https://www.youtube.com/watch?v=Mn6fU_YFgyE" style="color:rgb(45, 45, 45) ;" target="_blank">[Video]</a></span> 
+                  <span style="color:rgb(45, 45, 45) ;">&ensp;<a href="https://dl.acm.org/doi/10.1145/3706599.3720161" style="color:rgb(45, 45, 45) ;" target="_blank">[Paper]</a></span>
+                </p>
+                <p class="project-author">
+                  Daniel Killough*, <span style="font-weight:bolder; text-decoration: underline;">Ruijia Chen</span>*, Yuhang Zhao, Bilge Mutlu
+                </p>
+                <div style="margin-top:2% ;"></div>
+              </el-col>
+              </el-row>
+            <div v-show="pubFilter !=='posters'">
+            <el-divider></el-divider>
+            </div>
+            </div>
+
+            
 
             <div v-show="pubFilter === 'all' ||pubFilter === 'full' || pubFilter === 'mr'">
               <el-row>
